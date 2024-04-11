@@ -67,12 +67,12 @@ md.update(input.getBytes());
 byte[] output = md.digest();
 System.out.println();
 System.out.println("SHA1(\""+input+"\") = " +bytesToHex(output));
-input = "abc";
+input = "sam";
 md.update(input.getBytes());
 output = md.digest();
 System.out.println();
 System.out.println("SHA1(\""+input+"\") = " +bytesToHex(output));
-input = "abcdefghijklmnopqrstuvwxyz";
+input = "samuel";
 md.update(input.getBytes());
 output = md.digest();
 System.out.println();
@@ -92,18 +92,10 @@ return buf.toString(); }
 }
 ```
 ## OUTPUT:
-```
-C:\Program Files\Java\jdk1.6.0_20\bin>javac SHA1.java
-C:\Program Files\Java\jdk1.6.0_20\bin>java SHA1
-Message digest object info:
-Algorithm = SHA1
-Provider = SUN version 1.6
-ToString = SHA1 Message Digest from SUN, <initialized>
-SHA1("") = DA39A3EE5E6B4B0D3255BFEF95601890AFD80709
-SHA1("abc") = A9993E364706816ABA3E25717850C26C9CD0D89D
-SHA1("abcdefghijklmnopqrstuvwxyz") =
-32D10C7B8CF96570CA04CE37F2A19D84240D3A89
-```
+
+![Screenshot 2024-04-11 132553](https://github.com/Samuelmariappan/Ex-04/assets/119393030/eed102d2-da88-4a27-bcea-1144c07ef432)
+
+
 ## RESULT:
 Thus SHA was implemented successfully.
 
